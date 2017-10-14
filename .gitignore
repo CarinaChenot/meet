@@ -11,3 +11,10 @@
 !wp-content/themes/**
 !wp-content/mu-plugins
 !wp-content/mu-plugins/**
+
+
+wp-content/themes/meet/node_modules/
+.DS_Store
+
+# Build folder
+wp-content/themes/meet/assets/
