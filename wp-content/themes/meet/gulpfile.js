@@ -22,7 +22,7 @@ function clean() {
 }
 
 function styles() {
-  return gulp.src(paths.styles.src)
+  return gulp.src('src/stylus/main.styl')
     .pipe(sourcemaps.init())
     .pipe(stylus({
       compress: true,
