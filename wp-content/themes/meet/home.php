@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="main">
   <div class="container">
-    <section class="carousel-users">
+    <section class="users">
   <?php
 
     $args = array(

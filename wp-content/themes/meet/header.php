@@ -9,15 +9,15 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-  <header id="header">
-    <a class="logo" href="<?php bloginfo('url'); ?>">
+  <header class="header">
+    <a class="header-logo" href="<?php bloginfo('url'); ?>">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/meet_logo.svg">
       <?php bloginfo('name'); ?>
     </a>
-    <nav>
-      <a href="" class="menu-link">Découvrir</a>
+    <nav class="main-nav">
+      <a href="" class="nav-link">Découvrir</a>
     </nav>
   </header>
-  <section class="banner">
+  <section class="hero">
   <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?dpr=1&auto=format&fit=crop&w=2250&q=60&cs=tinysrgb" alt="">
   </section>

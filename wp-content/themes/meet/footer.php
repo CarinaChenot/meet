@@ -1,4 +1,4 @@
-  <footer id="footer">
+  <footer class="footer">
     <span class="legal">
       © <?php bloginfo( 'name' ); ?> 2017. Tous droits réservés
     </span>

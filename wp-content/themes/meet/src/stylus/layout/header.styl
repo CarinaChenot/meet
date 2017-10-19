@@ -1,4 +1,4 @@
-header#header
+.header
   box-shadow 0 5px 100px rgba(37,43,51,.1)
   position fixed
   background-color white
@@ -7,37 +7,33 @@ header#header
   align-items stretch
   z-index 2
 
-  .logo
-    text-transform uppercase
-    margin-left siteMargin
-    padding 1rem 0
-    width 9vw
+.header-logo
+  text-transform uppercase
+  margin-left site-margin
+  padding 1rem 0
+  width 9vw
 
-    img
-      height 18px
-      vertical-align sub
+  img
+    height 18px
+    vertical-align sub
 
-  nav
-    text-transform uppercase
-    margin-left 1vw
-    display flex
-    align-items stretch
+.main-nav
+  text-transform uppercase
+  margin-left 1vw
+  display flex
+  align-items stretch
 
-    a
-      color primary-color
-      transition all 0.3s ease-in-out
-      display flex
-      align-items center
-      padding 0 1rem
+.nav-link
+  color primary-color
+  transition all 0.3s ease-in-out
+  display flex
+  align-items center
+  padding 0 1rem
+  &:hover
+    color white
+    background-color primary-color
 
-      &:hover
-        color white
-        background-color primary-color
-
-      span
-        margin auto
-
-.banner
+.hero
   position fixed
   z-index -1
   height 50vh
