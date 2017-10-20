@@ -38,6 +38,7 @@ function add_custom_type_single() {
   );
 
   register_post_type($post_type, $args);
+  // flush_rewrite_rules();
 
   $taxonomy = 'gender';
   $object_type = array('single');

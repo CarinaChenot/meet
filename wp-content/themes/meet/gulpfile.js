@@ -14,7 +14,11 @@ const paths = {
   scripts: {
     src: 'src/js/**/*.js',
     dest: 'assets/js/'
-  }
+  },
+  images: {
+    src: 'src/img/**/*',
+    dest: 'assets/img/'
+  },
 };
 
 function clean() {
@@ -44,11 +48,17 @@ function scripts() {
     .pipe(gulp.dest(paths.scripts.dest));
 }
 
+function images() {
+  return gulp.src(paths.images.src)
+    .pipe(gulp.dest(paths.images.dest));
+}
+
 function watch() {
   gulp.watch(paths.scripts.src, scripts);
   gulp.watch(paths.styles.src, styles);
+  gulp.watch(paths.images.src, images);
 }
 
-const build = gulp.series(clean, gulp.parallel(styles, scripts), watch);
+const build = gulp.series(clean, gulp.parallel(styles, scripts, images), watch);
 
 gulp.task('default', build);

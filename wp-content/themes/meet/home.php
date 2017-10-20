@@ -2,21 +2,21 @@
 <div class="main">
   <div class="container">
     <section class="users">
-  <?php
+    <?php
 
-    $args = array(
-      'post_type' => 'single',
-      'posts_per_page' => 6,
-      'order_by' => 'date',
-      'order' => 'DESC'
-    );
+      $args = array(
+        'post_type' => 'single',
+        'posts_per_page' => 6,
+        'order_by' => 'date',
+        'order' => 'DESC'
+      );
 
-    $the_query = new WP_Query($args);
-    if ($the_query->have_posts()) {
-      while ($the_query->have_posts()) {
-        $the_query->the_post();
+      $the_query = new WP_Query($args);
+      if ($the_query->have_posts()):
+        while ($the_query->have_posts()):
+          $the_query->the_post();
 
-        if (has_post_thumbnail()) {
+          if (has_post_thumbnail()):
     ?>
 
     <a class="user" href="<?php the_permalink(); ?>" title="Voir profil">
@@ -31,11 +31,12 @@
     </a>
 
     <?php
-        }
-      }
+      endif;
+      endwhile;
       wp_reset_postdata();
-    }
-  ?>
+      endif;
+    ?>
+
     </section>
   </div>
 </div>

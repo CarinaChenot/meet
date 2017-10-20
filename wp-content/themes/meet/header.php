@@ -16,6 +16,8 @@
     </a>
     <nav class="main-nav">
       <a href="" class="nav-link">Découvrir</a>
+      <a href="?gender=femme" class="nav-link">Femmes</a>
+      <a href="?gender=homme" class="nav-link">Hommes</a>
     </nav>
   </header>
   <section class="hero">
